@@ -1,25 +1,49 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
+var votingAge;
+
+votingAge = prompt("What is your age?");
+
+if (votingAge > 18) {
+    console.log("True");
+} 
+
+else {
+    console.log("False");
+}
 
 
 
+//Task b:
+//declare a variable
+var myVariable = "He or she is NOT an adult person";
+//and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+if (votingAge > 18) {
+  myVariable = "He or she is an Adult person";
+  console.log(myVariable);
 
-//Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
-
+} else {
+   console.log(myVariable);
+}
 
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
+let year = "1999";
+console.log(Number(year));
 
 
 
-
-//Task d: Write a function to multiply a*b 
-
-
+//Task d: Write a function to multiply a*b
+function multiply(a, b) {
+    //Return the sum
+    return a*b;
+}
+var product= multiply(10, 4);
+console.log(product);
 
 
 
@@ -28,9 +52,13 @@
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
 
+function calculate() {
+    var humanYears = 10                                                                                                                                                                                                                         ;
+    var dogYears = (humanYears * 7);
+    console.log(dogYears);
+  }
 
-
-
+  console.log(calculate());
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
 //takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) and returns the number of pounds of raw food to feed in a day.
@@ -67,12 +95,30 @@
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+function calculate() {
+    var kilometers = 1                                                                                                                                                                                                                       ;
+    var miles = (kilometers / 0.62137119223);
+    console.log(miles);
+  }
+
+  console.log(calculate());
+
 
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
+function calculate() {
+    var centimeters = 1                                                                                                                                                                                                                       ;
+    var feet = (centimeters * 30,48);
+    console.log(feet);
+  }
+
+  console.log(calculate());
+
+
+
 
 
 
